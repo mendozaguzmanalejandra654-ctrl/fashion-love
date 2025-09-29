@@ -1,0 +1,92 @@
+/* ===== Sección Contacto Adaptada ===== */
+.contacto-section {
+  max-width: 600px;
+  margin: 60px auto 80px;
+  padding: 30px 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contacto-section h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #000;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.contacto-section form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contacto-section form input,
+.contacto-section form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contacto-section form input:focus,
+.contacto-section form textarea:focus {
+  border-color: #ff0077;
+  box-shadow: 0 0 8px rgba(255, 0, 119, 0.5);
+  outline: none;
+}
+
+.contacto-section form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.contacto-section form button.btn {
+  background-color: #ff0077;
+  color: white;
+  border: none;
+  padding: 15px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-section form button.btn:hover {
+  background-color: #cc0066;
+}
+
+.form-message {
+  margin-top: 18px;
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-message.success {
+  color: green;
+}
+
+.form-message.error {
+  color: #ff0077;
+}
+
+/* Responsive para móvil */
+@media (max-width: 640px) {
+  .contacto-section {
+    margin: 40px 15px 60px;
+    padding: 25px 20px;
+  }
+}

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 15x; 
+}
+
+
+header h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.producto {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+}
+
+.precio {
+  color: #ff0077;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #ff0077;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #cc005f;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  margin-top: 40px;
+}
+.logo-catalogo {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #000;
+  gap: 40px; 
+  flex-wrap: nowrap;
+}
+
+.logo-catalogo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  gap: 10px;
+}
+
+.logo-catalogo img {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.logo-catalogo span {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px; 
+}
+
+.logo-catalogo nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-catalogo nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo-catalogo nav ul li a:hover {
+  color: #ff0077;
+}
+
+.catalogo-texto {
+  flex-grow: 1; 
+  text-align: center;
+  color: white;
+}
+
+.catalogo-texto h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem; 
+  margin: 0;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.catalogo-texto p {
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  color: #ccc;
+  text-align: center;
+}
